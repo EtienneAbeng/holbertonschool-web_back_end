@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+""" Mesure le temps d'exécution total pour wait_n(n, max_delay) et renvoie total_time / n. """
+
 
 import asyncio
 import time
 from typing import Callable
 
-""" Mesure le temps d'exécution total pour wait_n(n, max_delay) et renvoie total_time / n. """
 
 wait_n = __import__('1-concurrent_coroutines').wait_n
 

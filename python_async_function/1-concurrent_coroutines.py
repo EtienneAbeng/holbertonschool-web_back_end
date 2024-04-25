@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """ Créez une coroutine qui attend n fois un délai aléatoire dans un intervalle donné """
 
 import asyncio
