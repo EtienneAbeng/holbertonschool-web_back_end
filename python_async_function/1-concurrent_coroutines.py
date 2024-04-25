@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
+""" Créez une coroutine qui attend n fois un délai aléatoire dans un intervalle donné """
+
 import asyncio
 from typing import List
 from random import uniform
 from asyncio import create_task
+
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
