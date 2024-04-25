@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-
 """ Déclarer une coroutine nommée wait_random. """
-
 
 import asyncio  # Importer le module asyncio pour la programmation asynchrone
 import random   # Importer le module random pour générer des nombres aléatoires
-
 
 
 async def wait_random(max_delay: int = 10) -> float:
