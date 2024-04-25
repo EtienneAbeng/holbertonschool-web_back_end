@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" A type-annotated function floor that takes a float n as argument and returns the floor of the float """
+""" A type-annotated function floor that takes a float n as argument """
 
 import math  # import the math module
 
