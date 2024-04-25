@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ A type-annotated function sum_mixed_list with list input of mixed """
+
+
 from typing import List, Union
 
 
