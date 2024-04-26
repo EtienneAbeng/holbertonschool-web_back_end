@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" annotate the below function’s parameters and return values with the appropriate types"""
+""" annotate the below function’s parameters"""
 
 
 from typing import Iterable, Sequence, List, Tuple
