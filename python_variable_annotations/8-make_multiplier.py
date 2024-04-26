@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" A type-annotated function make_multiplier that takes a float multiplier as argument"""
+""" A type-annotated function make_multiplier that takes 
+a float multiplier as argument"""
 
 from typing import Callable
 
