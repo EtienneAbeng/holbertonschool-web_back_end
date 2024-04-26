@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Mesure le temps d'exécution total pour wait_n(n, max_delay) et renvoie total_time / n. """
+""" Mesure le temps d'exécution total et renvoie total_time / n. """
 
 
 import asyncio

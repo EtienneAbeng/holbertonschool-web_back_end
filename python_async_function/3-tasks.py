@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Crée une tâche asyncio pour attendre un délai aléatoire entre 0 et max_delay (inclus). """
+""" Crée une tâche asyncio pour attendre un délai aléatoire """
 
 
 import asyncio
@@ -11,7 +11,8 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 def task_wait_random(max_delay: int) -> asyncio.Task:
     """
-    Crée une tâche asyncio pour attendre un délai aléatoire entre 0 et max_delay (inclus).
+    Crée une tâche asyncio pour attendre un délai aléatoire
+    entre 0 et max_delay (inclus).
     """
     # Crée une coroutine pour attendre le délai aléatoire
     coroutine = wait_random(max_delay)
