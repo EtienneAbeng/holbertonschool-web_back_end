@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Créez une coroutine qui attend n fois un délai aléatoire dans un intervalle donné """
+""" Coroutine qui attend n fois un délai aléatoire dans un intervalle donné """
 
 import asyncio
 from typing import List
@@ -11,14 +11,13 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     Invoque wait_random n fois avec le max_delay spécifié.
     Renvoie la liste de tous les délais (valeurs float).
-    La liste des délais doit être dans l'ordre croissant sans utiliser sort() en raison de la concurrence.
     """
     # Liste pour stocker les délais
     delays = []
 
     async def wait_random(max_delay: int) -> float:
         """
-        Coroutine asynchrone pour attendre un délai aléatoire entre 0 et max_delay (inclus).
+        Coroutine asynchrone attendant un délai aléatoire entre 0 et max_delay.
         """
         # Génère un délai aléatoire
         delay = uniform(0, max_delay)
