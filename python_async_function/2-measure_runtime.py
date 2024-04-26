@@ -12,7 +12,7 @@ wait_n = __import__('1-concurrent_coroutines').wait_n
 
 def measure_time(n: int, max_delay: int) -> float:
     """
-    Mesure le temps d'exécution total pour wait_n(n, max_delay) et renvoie total_time / n.
+    Mesure le temps d'exécution total pour wait_n(n, max_delay).
     """
     # Début du chronomètre
     start_time = time.time()
