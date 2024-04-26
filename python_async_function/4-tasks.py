@@ -13,7 +13,8 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     Invoque task_wait_random n fois avec le max_delay spécifié.
     Renvoie la liste de tous les délais (valeurs float).
-    La liste des délais doit être dans l'ordre croissant sans utiliser sort() en raison de la concurrence.
+    La liste des délais doit être dans l'ordre croissant 
+    sans utiliser sort() en raison de la concurrence.
     """
     # Liste pour stocker les délais
     delays = []
