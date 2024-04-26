@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
-"""Run time for four parallel comprehensions"""
+"""Mesure du temps d'exécution pour quatre compréhensions asynchrones"""
 
 import asyncio
 from time import perf_counter
 
+# Importe la coroutine async_comprehension depuis le module précédent
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
-
+# Définition de la coroutine measure_runtime
 async def measure_runtime() -> float:
-    """Measure the total runtime for four parallel async comprehensions."""
-    start_time = perf_counter()
-    await asyncio.gather(async_comprehension(), async_comprehension(),
-                         async_comprehension(), async_comprehension())
-    end_time = perf_counter()
-    return end_time - start_time
+    """Mesure le temps d'exécution total pour quatre compréhensions
+    asynchrones parallèles"""
+    start_time = perf_counter()  # Enregistre le temps de départ
+    await asyncio.gather(
+        async_comprehension(), async_comprehension(),
+        async_comprehension(), async_comprehension()
+    )
+    end_time = perf_counter()  # Enregistre le temps d'arrêt
+    return end_time - start_time  # Retourne la différence entre les deux temps
