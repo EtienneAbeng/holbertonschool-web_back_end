@@ -6,7 +6,7 @@ import random   # Importer le module random pour générer des nombres aléatoir
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    # Générer un délai aléatoire entre 0 et max_delay secondes
+    """Générer un délai aléatoire entre 0 et max_delay secondes"""
     random_delay = random.uniform(0, max_delay)
 
     # Attendre le délai aléatoire
