@@ -19,7 +19,7 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     # Liste pour stocker les délais
     delays = []
 
-    # Crée des tâches pour attendre un délai aléatoire entre 0 et max_delay (inclus)
+    # Crée des tâches pour attendre un délai aléatoire entre 0 et max_delay
     # et les stocke dans une liste
     tasks = [task_wait_random(max_delay) for index in range(n)]
 
