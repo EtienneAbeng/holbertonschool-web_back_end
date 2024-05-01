@@ -1,4 +1,5 @@
 #!/bin/bash
+// my comment
 
 # Connecter à MongoDB et exécuter la commande pour lister les bases de données
 mongo --quiet --eval "db.adminCommand('listDatabases')"
