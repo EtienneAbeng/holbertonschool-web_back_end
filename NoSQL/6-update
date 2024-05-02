@@ -1,0 +1,9 @@
+// a script that adds a new attribute to a document in the collection schooldb.school.update
+// $set: Sets value of specific field. Updates/adds field to existing doc.
+// multi: Specifies if update applies to single or multiple matching docs.
+
+db.school.update(
+    { "name": "Holberton school" },
+    { $set: { "address": "972 Mission street" } },
+    { multi: true }
+  )
