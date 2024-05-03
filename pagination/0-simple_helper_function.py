@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
- """
- Retourne un tuple de taille deux contenant un indice de départ et un indice de fin
- """
-
+"""Pagination helper function"""
 from typing import Tuple
 
-def index_range(page: int, page_size: int) -> tuple[int, int]:
-    """
-    Fonction qui retourne un tuple de taille deux contenant un indice de départ et un indice de fin"""
-    
-    indice_debut = (page - 1) * page_size
-    indice_fin = page * page_size
-    return indice_debut, indice_fin
+
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """return a tuple of start index and end index"""
+    start_Page = (page - 1) * page_size
+    end_Page = page * page_size
+    return (start_Page, end_Page)
