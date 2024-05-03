@@ -6,9 +6,9 @@ from typing import Tuple, List
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """Return a tuple of start index and end index"""
-    start = (page - 1) * page_size
-    end = page * page_size
-    return start, end
+    start_Page = (page - 1) * page_size
+    end_Page = page * page_size
+    return start_Page, end_Page
 
 
 class Server:
@@ -23,8 +23,8 @@ class Server:
 
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
-                reader = csv.reader(f)
-                dataset = [row for row in reader]
+                filereader = csv.reader(f)
+                dataset = [row for row in filereader]
             self.__dataset = dataset[1:]
 
         return self.__dataset
