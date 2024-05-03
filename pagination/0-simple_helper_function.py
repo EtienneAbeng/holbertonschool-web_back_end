@@ -3,6 +3,8 @@
  Retourne un tuple de taille deux contenant un indice de départ et un indice de fin
  """
 
+from typing import Tuple
+
 def index_range(page: int, page_size: int) -> tuple[int, int]:
     """
     Fonction qui retourne un tuple de taille deux contenant un indice de départ et un indice de fin"""
