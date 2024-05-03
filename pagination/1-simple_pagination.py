@@ -45,4 +45,3 @@ class Server:
             return []
         else:
             return self.__dataset[i[0]:i[1]]
-        
