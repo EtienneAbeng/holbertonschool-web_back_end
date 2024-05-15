@@ -26,7 +26,7 @@ export default class Currency {
     this._name = newName;
   }
 
-  static displayFullCurrency(currency) {
-    return `${currency.name} (${currency.code})`;
+  static displayFullCurrency() {
+    return `${this._name} (${this._code})`;
   }
 }
