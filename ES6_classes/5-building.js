@@ -1,19 +1,21 @@
 // 5-building.js
+
+// Définition de la classe Building
 export default class Building {
-  // Constructor with sqft attribute
+  // Constructeur avec l'attribut sqft
   constructor(sqft) {
-    this._sqft = sqft; // Underscore attribute version
+    this._sqft = sqft; // Version de l'attribut avec un tiret bas
   }
 
-  // Getter for sqft attribute
+  // Getter pour l'attribut sqft
   get sqft() {
     return this._sqft;
   }
 
-  // Abstract method that should be implemented by subclasses
+  // Méthode abstraite devant être implémentée par les sous-classes
   evacuationWarningMessage() {
     throw new Error(
-      'Class extending Building must override evacuationWarningMessage',
+      'La classe étendant Building doit remplacer evacuationWarningMessage',
     );
   }
 }
