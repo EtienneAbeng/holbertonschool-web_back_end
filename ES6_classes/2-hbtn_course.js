@@ -49,3 +49,5 @@ class HolbertonCourse {
     this._students = newStudents; // Met à jour la liste des étudiants inscrits au cours
   }
 }
+
+export default HolbertonCourse;
