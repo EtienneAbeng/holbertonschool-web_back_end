@@ -1,5 +1,5 @@
 // Définir la fonction getFullResponseFromAPI
-function getFullResponseFromAPI(success) {
+export default function getFullResponseFromAPI(success) {
   // Retourner une nouvelle promesse
   return new Promise((resolve, reject) => {
     // Vérifier si success est true
@@ -12,6 +12,3 @@ function getFullResponseFromAPI(success) {
     }
   });
 }
-
-// Exporter la fonction getFullResponseFromAPI
-export default getFullResponseFromAPI;
