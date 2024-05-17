@@ -7,10 +7,7 @@ function handleResponseFromAPI(promise) {
       console.log('Got a response from the API'); // Journaliser dans la console
       return { status: 200, body: 'success' }; // Retourner l'objet avec le statut et le corps
     })
-    .catch(() =>
-    // Gestionnaire pour le rejet de la promesse
-      new Error(), // Retourner un objet Error vide
-    )
+    .catch(() => new Error()) // Gestionnaire pour le rejet de la promesse
     .finally(() => {
       // Gestionnaire pour chaque résolution de la promesse
       console.log('Got a response from the API'); // Journaliser dans la console
