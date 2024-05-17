@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Babel cache
+.babelrc
+.babelcache.json
+
+# Jest cache
+jest/
+coverage/
+
+# ESLint cache
+.eslintcache
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# MacOS system files
+.DS_Store
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Build output
+dist/
+build/
+
