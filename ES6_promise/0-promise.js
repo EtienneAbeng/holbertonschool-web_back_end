@@ -1,4 +1,6 @@
-/* eslint-disable */
+// Exporter par défaut la fonction getResponseFromAPI
 export default function getResponseFromAPI() {
-	return new Promise((resolve, reject) => {});
+  // Retourner une nouvelle promesse
+  return new Promise((resolve, reject) => {
+  });
 }
